@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Holidays - South Indian Tourist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <span>+91 9360614159</span>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/_explore_holidays_?igsh=enhqZ29pNnA0YWF5" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact Details</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore Holidays</h1>
+            <p class="hero-subtitle">South Indian Tourist</p>
+            <p class="hero-description">Discover the beauty of South India with our handcrafted travel experiences</p>
+        </div>
+    </section>
+
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+
+            <div class="state-section">
+                <h3 class="state-title">Tamil Nadu</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card" data-destination="Ooty">
+                        <div class="card-image">
+                            <img src="frontend/img/ooty.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">  
+                            <h4>Ooty</h4>
+                            <p>The Queen of Hill Stations</p>
+                            <button class="book-btn" onclick="openBookingForm('Ooty', 'Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Yercaud">
+                        <div class="card-image">
+                            <img src="frontend/img/yercaud.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Yercaud</h4>
+                            <p>Jewel of the South</p>
+                            <button class="book-btn" onclick="openBookingForm('Yercaud', 'Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Masinagudi">
+                        <div class="card-image">
+                            <img src="frontend/img/masinagudi.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Masinagudi</h4>
+                            <p>Wildlife Paradise</p>
+                            <button class="book-btn" onclick="openBookingForm('Masinagudi', 'Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Kodaikanal">
+                        <div class="card-image">
+                            <img src="frontend/img/Kodaikanal.webp">
+                            <div class="image-placeholder">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Kodaikanal</h4>
+                            <p>Princess of Hill Stations</p>
+                            <button class="book-btn" onclick="openBookingForm('Kodaikanal', 'Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Coonoor">
+                        <div class="card-image">
+                            <img src="frontend/img/coonoor.webp">
+                            <div class="image-placeholder">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Coonoor</h4>
+                            <p>Tea Garden Paradise</p>
+                            <button class="book-btn" onclick="openBookingForm('Coonoor', 'Tamil Nadu')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h3 class="state-title">Kerala</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card" data-destination="Munnar">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\munnar.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Munnar</h4>
+                            <p>Tea Garden Capital</p>
+                            <button class="book-btn" onclick="openBookingForm('Munnar', 'Kerala')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Kochi">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\Kochi.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Kochi</h4>
+                            <p>Queen of Arabian Sea</p>
+                            <button class="book-btn" onclick="openBookingForm('Kochi', 'Kerala')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Marari Beach">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\marari_beach.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Marari Beach</h4>
+                            <p>Pristine Coastal Beauty</p>
+                            <button class="book-btn" onclick="openBookingForm('Marari Beach', 'Kerala')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Alappuzha">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\alappuzha.webp">
+                            <div class="image-placeholder">
+                                <i class="fas fa-water"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Alappuzha</h4>
+                            <p>Venice of the East</p>
+                            <button class="book-btn" onclick="openBookingForm('Alappuzha', 'Kerala')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Wayanad">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\wayanad.webp">
+                            <div class="image-placeholder">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Wayanad</h4>
+                            <p>Land of Paddy Fields</p>
+                            <button class="book-btn" onclick="openBookingForm('Wayanad', 'Kerala')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h3 class="state-title">Karnataka</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card" data-destination="Mysuru Palace">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\Mysore_Palace.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Mysuru Palace</h4>
+                            <p>Royal Heritage</p>
+                            <button class="book-btn" onclick="openBookingForm('Mysuru Palace', 'Karnataka')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Chikkamagaluru">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\chikmagalur.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Chikkamagaluru</h4>
+                            <p>Coffee Land</p>
+                            <button class="book-btn" onclick="openBookingForm('Chikkamagaluru', 'Karnataka')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Hampi">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\Hampi.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-gopuram"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Hampi</h4>
+                            <p>Ancient Ruins</p>
+                            <button class="book-btn" onclick="openBookingForm('Hampi', 'Karnataka')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Jog Falls">
+                        <div class="card-image">
+                            <img src="d:\mini project 1\img\jog falls.jpg">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Jog Falls</h4>
+                            <p>Majestic Waterfalls</p>
+                            <button class="book-btn" onclick="openBookingForm('Jog Falls', 'Karnataka')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Coorg">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Coorg</h4>
+                            <p>Scotland of India</p>
+                            <button class="book-btn" onclick="openBookingForm('Coorg', 'Karnataka')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h3 class="state-title">Goa</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card" data-destination="Dudhsagar Falls">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-waterfall"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Dudhsagar Falls</h4>
+                            <p>Sea of Milk</p>
+                            <button class="book-btn" onclick="openBookingForm('Dudhsagar Falls', 'Goa')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Candolim Beach">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Candolim Beach</h4>
+                            <p>Serene Shores</p>
+                            <button class="book-btn" onclick="openBookingForm('Candolim Beach', 'Goa')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Fort Aguada">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-fort-awesome"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Fort Aguada</h4>
+                            <p>Portuguese Heritage</p>
+                            <button class="book-btn" onclick="openBookingForm('Fort Aguada', 'Goa')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Reis Magos Fort">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chess-rook"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Reis Magos Fort</h4>
+                            <p>Historic Landmark</p>
+                            <button class="book-btn" onclick="openBookingForm('Reis Magos Fort', 'Goa')">Book Now</button>
+                        </div>
+                    </div>
+
+                    <div class="destination-card" data-destination="Colva Beach">
+                        <div class="card-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-cocktail"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Colva Beach</h4>
+                            <p>White Sand Paradise</p>
+                            <button class="book-btn" onclick="openBookingForm('Colva Beach', 'Goa')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Location</h4>
+                    <p>Explore Holidays<br>Punjai Puliampatti<br>Erode - 638459<br>Tamil Nadu</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Call Us</h4>
+                    <p><a href="tel:+919360614159">+91 9360614159</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>teamexploreholidays</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h4>Follow Us</h4>
+                    <p><a href="https://www.instagram.com/_explore_holidays_?igsh=enhqZ29pNnA0YWF5" target="_blank">@_explore_holidays_</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Explore Holidays. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBookingForm()">&times;</span>
+            <h2>Book Your Trip</h2>
+            <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Full Name: *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: *</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="travelDate">Travel Date: *</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="numPeople">Number of People: *</label>
+                    <input type="number" id="numPeople" name="numPeople" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requirements:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
